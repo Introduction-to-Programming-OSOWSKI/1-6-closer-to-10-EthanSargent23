@@ -1,13 +1,12 @@
 def close10(x, y):
 
-    if abs(10 - x > 10 - y):
-        return x
-
-    elif (10 - x < 10 - y):
+    if abs(10 - x) > abs(10 - y):
         return y
+
+    elif abs(10 - x) < abs(10 - y):
+        return x
 
     else:
         return 0
 
-print(close10(50, 100))
-
+print(close10(4, 15))
